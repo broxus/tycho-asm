@@ -31,6 +31,7 @@ async fn main() -> ExitCode {
 }
 
 /// TVM Assembler
+#[allow(unused)]
 #[derive(FromArgs)]
 struct App {
     #[argh(subcommand)]

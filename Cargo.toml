@@ -14,8 +14,8 @@ anyhow = "1.0"
 argh = "0.1"
 async-trait = "0.1"
 base64 = "0.22.1"
-chumsky = "0.10.1"
-console = "0.15"
+chumsky = "0.11.1"
+console = "0.16"
 dashmap = "6.1"
 either = "1.9"
 hex = "0.4"
@@ -32,4 +32,4 @@ tracing = "0.1"
 tracing-subscriber = { version = "0.3", features = ["env-filter"] }
 unicode-width = "0.2"
 
-tycho-types = { version = "0.2.0", default-features = false }
+tycho-types = { version = "0.3.0", default-features = false }
