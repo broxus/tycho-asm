@@ -1238,6 +1238,9 @@ fn register_stackops(t: &mut Opcodes) {
         "RIST255_QMUL" => 0xb7f924,
         "RIST255_QMULBASE" => 0xb7f925,
 
+        "PREVMCBLOCKS" => 0xf83400,
+        "PREVKEYBLOCK" => 0xf83401,
+
         "BLS_VERIFY" => 0xf93000,
         "BLS_AGGREGATE" => 0xf93001,
         "BLS_FASTAGGREGATEVERIFY" => 0xf93002,
