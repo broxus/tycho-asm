@@ -1,6 +1,6 @@
 [package]
 name = "tycho-asm"
-version = "0.2.0"
+version = "0.2.1"
 description = "Rust implementation of TVM Assembler"
 include = ["src/**/*.rs", "src/**/*.tvm", "./LICENSE-*", "./README.md"]
 edition.workspace = true
