@@ -1223,6 +1223,7 @@ fn register_stackops(t: &mut Opcodes) {
         "HASHBU" => 0xf916,
 
         "ED25519_CHKSIGN_EXT" => 0xf918(u8),
+        "ED25519_CHKSIGNU" => 0xf919,
 
         "RIST255_FROMHASH" => 0xf920,
         "RIST255_VALIDATE" => 0xf921,
@@ -1292,6 +1293,15 @@ fn register_stackops(t: &mut Opcodes) {
         "REWRITESTDADDRQ" => 0xfa45,
         "REWRITEVARADDR" => 0xfa46,
         "REWRITEVARADDRQ" => 0xfa47,
+
+        "LDSTDADDR" => 0xfa48,
+        "LDSTDADDRQ" => 0xfa49,
+        "LDOPTSTDADDR" => 0xfa50,
+        "LDOPTSTDADDRQ" => 0xfa51,
+        "STSTDADDR" => 0xfa52,
+        "STSTDADDRQ" => 0xfa53,
+        "STOPTSTDADDR" => 0xfa54,
+        "STOPTSTDADDRQ" => 0xfa55,
 
         "SENDRAWMSG" => 0xfb00,
         "RAWRESERVE" => 0xfb02,
