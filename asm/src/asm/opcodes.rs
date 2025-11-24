@@ -1222,8 +1222,7 @@ fn register_stackops(t: &mut Opcodes) {
         "P256_CHKSIGNS" => 0xf915,
         "HASHBU" => 0xf916,
 
-        "ED25519_CHKSIGN_EXT" => 0xf918(u8),
-        "ED25519_CHKSIGNU" => 0xf919,
+        "ED25519_CHKSIGNS" => 0xf917,
 
         "RIST255_FROMHASH" => 0xf920,
         "RIST255_VALIDATE" => 0xf921,
