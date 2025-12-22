@@ -1224,6 +1224,10 @@ fn register_stackops(t: &mut Opcodes) {
 
         "ED25519_CHKSIGNS" => 0xf917,
 
+        "SIGNDOMAIN" => 0xf91800,
+        "SIGNDOMAIN_POP" => 0xf91801,
+        "SIGNDOMAIN_PUSH" => 0xf91802,
+
         "RIST255_FROMHASH" => 0xf920,
         "RIST255_VALIDATE" => 0xf921,
         "RIST255_ADD" => 0xf922,
