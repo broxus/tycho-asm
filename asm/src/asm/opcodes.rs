@@ -2056,8 +2056,8 @@ fn op_throw<'s>(
     let WithSpan(Nat(id), nat_span) = instr.parse_args(scope)?;
 
     match id.to_u16() {
-        Some(id @ 0x00..=0x3f) => ctx.get_builder(16).store_u16(0xf200 | id),
-        Some(id @ 0x40..=0x7ff) => ctx.get_builder(24).store_uint(0xf2c000 | (id as u64), 24),
+        Some(id @ ..=0x3f) => ctx.get_builder(16).store_u16(0xf200 | id),
+        Some(id @ ..=0x7ff) => ctx.get_builder(24).store_uint(0xf2c000 | (id as u64), 24),
         _ => return Err(AsmError::OutOfRange(nat_span)),
     }
     .with_span(instr.span)
@@ -2071,8 +2071,8 @@ fn op_throwif<'s>(
     let WithSpan(Nat(id), nat_span) = instr.parse_args(scope)?;
 
     match id.to_u16() {
-        Some(id @ 0x00..=0x3f) => ctx.get_builder(16).store_u16(0xf240 | id),
-        Some(id @ 0x100..=0x7ff) => ctx.get_builder(24).store_uint(0xf2d000 | (id as u64), 24),
+        Some(id @ ..=0x3f) => ctx.get_builder(16).store_u16(0xf240 | id),
+        Some(id @ ..=0x7ff) => ctx.get_builder(24).store_uint(0xf2d000 | (id as u64), 24),
         _ => return Err(AsmError::OutOfRange(nat_span)),
     }
     .with_span(instr.span)
@@ -2086,8 +2086,8 @@ fn op_throwifnot<'s>(
     let WithSpan(Nat(id), nat_span) = instr.parse_args(scope)?;
 
     match id.to_u16() {
-        Some(id @ 0x00..=0x3f) => ctx.get_builder(16).store_u16(0xf280 | id),
-        Some(id @ 0x100..=0x7ff) => ctx.get_builder(24).store_uint(0xf2e000 | (id as u64), 24),
+        Some(id @ ..=0x3f) => ctx.get_builder(16).store_u16(0xf280 | id),
+        Some(id @ ..=0x7ff) => ctx.get_builder(24).store_uint(0xf2e000 | (id as u64), 24),
         _ => return Err(AsmError::OutOfRange(nat_span)),
     }
     .with_span(instr.span)
